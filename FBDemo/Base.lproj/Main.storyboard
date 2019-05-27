@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObR-hC-QxQ">
+                                <rect key="frame" x="82" y="423" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.14443866720000001" green="0.34085684500000002" blue="0.91590061099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8L3-w8-PLp"/>
+                                    <constraint firstAttribute="width" constant="250" id="Joo-CX-v5J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="Login With FaceBook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginFBButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHQ-Go-l8t"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-te-JIx">
+                                <rect key="frame" x="23" y="92" width="363" height="283"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-aF-oNV">
+                                        <rect key="frame" x="20" y="203" width="323" height="60"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" red="0.94224326550000004" green="0.95157240669999998" blue="0.95157240669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Us3-Bx-ONc">
+                                        <rect key="frame" x="64" y="20" width="235" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="a6i-nd-EUR"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29742125729563146" green="0.570546756713744" blue="0.91590061099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HHq-aF-oNV" firstAttribute="top" secondItem="Us3-Bx-ONc" secondAttribute="bottom" constant="55" id="7PF-x9-B0j"/>
+                                    <constraint firstAttribute="bottom" secondItem="HHq-aF-oNV" secondAttribute="bottom" constant="20" id="8LK-c4-Smc"/>
+                                    <constraint firstItem="HHq-aF-oNV" firstAttribute="leading" secondItem="ONC-te-JIx" secondAttribute="leading" constant="20" id="G0Q-z7-5Cb"/>
+                                    <constraint firstItem="Us3-Bx-ONc" firstAttribute="top" secondItem="ONC-te-JIx" secondAttribute="top" constant="20" id="Y6e-GH-4Pk"/>
+                                    <constraint firstItem="Us3-Bx-ONc" firstAttribute="centerX" secondItem="HHq-aF-oNV" secondAttribute="centerX" id="meh-pM-paw"/>
+                                    <constraint firstItem="HHq-aF-oNV" firstAttribute="centerX" secondItem="ONC-te-JIx" secondAttribute="centerX" id="rpS-K3-QGW"/>
+                                    <constraint firstItem="Us3-Bx-ONc" firstAttribute="leading" secondItem="ONC-te-JIx" secondAttribute="leading" constant="64" id="tHZ-sL-gSf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.ShadowOpcaity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ObR-hC-QxQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="031-40-L36"/>
+                            <constraint firstItem="ONC-te-JIx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="B55-VR-sWw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ONC-te-JIx" secondAttribute="trailing" constant="28" id="Gad-ab-54R"/>
+                            <constraint firstItem="ObR-hC-QxQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rvp-dp-o6p"/>
+                            <constraint firstItem="ONC-te-JIx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="XpI-1k-z9i"/>
+                            <constraint firstItem="ObR-hC-QxQ" firstAttribute="top" secondItem="ONC-te-JIx" secondAttribute="bottom" constant="48" id="fGj-Ft-Pl1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="abc" destination="HHq-aF-oNV" id="IWC-zk-Vbk"/>
+                        <outlet property="loginButton" destination="ObR-hC-QxQ" id="nke-op-pIO"/>
+                        <outlet property="myImage" destination="Us3-Bx-ONc" id="ie3-Fb-hOc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="43.526785714285715"/>
+        </scene>
+    </scenes>
+</document>
